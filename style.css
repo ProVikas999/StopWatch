@@ -1,0 +1,111 @@
+
+.headingContainer {
+    display: flex;
+    margin-top: 50px;
+    margin-inline-start: 35%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 4em;
+    padding: 10px;
+    background-color: gold; /* Background color for the heading */
+    color: #111111; /* Text color */
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    cursor: pointer;
+    transition: box-shadow 0.1s, transform 0.2s;
+  }
+  
+  .heading:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    transform: translateY(-20px);
+    
+  }
+
+body {
+    font-family: Arial, sans-serif;
+ 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Background color */
+  }
+
+  
+  .stopwatch {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    animation: slideIn 0.5s ease-in-out; /* Entry animation */
+  }
+  
+  .display {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .controls button:hover {
+    background-color: #2980b9; /* Button background color on hover */
+    transform: translateY(-3px);
+  }
+  
+  .controls button:active {
+    transform: translateY(1px);
+  }
+  
+  #lapTimes {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  .lapContainer {
+    
+    margin-top: 20px;
+    padding: 10px;
+    background-color:white; /* Lap times container background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for lap times container */
+  }
+  
+  .lapContainer ul {
+    background-color: rgb(239, 217, 217);
+    padding: 0;
+    text-align: left;
+  }
+  
+  .lapContainer li {
+    color:black;
+    text-align: center;
+    padding: 8px 10px;
+    border-bottom: 1px dotted #66c066; /* Border between lap times */
+  }
+  
+  /* Entry animation keyframes */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
